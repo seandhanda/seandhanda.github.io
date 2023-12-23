@@ -20,7 +20,7 @@ header {
     padding: 1em 0;
 
         /* New styles for background image */
-        background-image: url('Images/background.jpg'); 
+        background-image: url('/Images/background.jpg');
         background-size: cover; /* Cover the entire area of the header */
         background-position: center; /* Center the image in the header */
         background-repeat: no-repeat; /* Do not repeat the image */
