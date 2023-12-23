@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+
+        /* New styles for background image */
+        background-image: url('images/background.jpg'); 
+        background-size: cover; /* Cover the entire area of the header */
+        background-position: center; /* Center the image in the header */
+        background-repeat: no-repeat; /* Do not repeat the image */
+
+        /* Add a dark overlay to the image for better text contrast */
+         position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Color and opacity adjustment */
+    z-index: -1; 
+}
+
+header h1 {
+    font-size: 106px;
+    color: #ffffff; /* Ensure the text is white for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+header h1 {
+    font-size: 106px; 
+    /* line-height: 1.2; /* Adjust the line height to manage header height */
+    /* margin: 0; Removes default margin */
+    /* padding: 0.5em 0; Adjust the padding to reduce header height if needed */ 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0048;
+    color: #fff;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+#education {
+    padding: 20px;
+    padding-left: 0; /* Remove left padding to align with other sections */
+}
+
+.education-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start of the main axis */
+}
+
+.education-text {
+    /* This will ensure the text takes up the space it needs, but not more */
+    margin-right: 23px; /* Add some space between the text and the logo */
+}
+
+#education h2 {
+    margin-bottom: 10px; /* Reduce space below the heading */
+}
+
+.education-text p:first-child {
+    margin-top: 0; /* Remove the top margin on the first paragraph */
+}
+
+.education-logo img {
+    max-width: 150px; 
+    height: auto;
+    height: auto;
+    margin-left: auto; /* Push the logo to the right */
+    margin-top: 0; /* Align top with the text */
+}
+
+/* Reduce vertical spaces between About and Educaiton, Education and Contact
+
+/* Target the <h2> directly after the #about section */
+#about + h2 {
+    margin-top: 10px; /* This reduces the space between the 'About Me' content and the 'Education' title */
+}
+
+h2 {
+    margin-top: 0px; /* Reduce the top margin for all <h2> elements */
+}
+
+
+
+
