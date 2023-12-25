@@ -1,1 +1,1 @@
-Academic Website - Undergrad
+Academic Website - Undergrad @ UBC
